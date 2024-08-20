@@ -1,0 +1,31 @@
+[project]
+name = "data-disc"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Keisuke Otaki", email = "keisuke.otaki.jp@gmail.com" }
+]
+dependencies = [
+    "numpy>=2.1.0",
+    "scipy>=1.14.0",
+    "matplotlib>=3.9.2",
+    "ipython>=8.26.0",
+    "jupyter>=1.0.0",
+    "seaborn>=0.13.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/data_disc"]
