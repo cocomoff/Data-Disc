@@ -9,6 +9,9 @@ wheels/
 # venv
 .venv
 
+# Mac
+.DS_Store
+
 # ours
 outputs
 problems
